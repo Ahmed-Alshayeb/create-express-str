@@ -16,26 +16,20 @@
 ## 🛠 Installation & Usage
 
 ### ▶️ Run directly with `npx` (no need to install globally):
-
-```bash
 npx create-express-str my-app
-📂 Want to generate in the current folder?
-bash
-Copy
-Edit
+
+#### 📂 Want to generate in the current folder?
+
 npx create-express-str .
-🌍 Or install it globally:
-bash
-Copy
-Edit
+#### 🌍 Or install it globally:
+
 npm install -g create-express-str
 
 create-express-str my-app
 
-🧱 Project Structure
-bash
-Copy
-Edit
+## 🧱 Project Structure
+
+```bash
 my-app/
 ├── config/
 │   ├── db.connection.js
@@ -48,7 +42,7 @@ my-app/
 │   ├── middlewares/
 │   │   └── auth.middleware.js
 │   ├── modules/
-│   │   └── test/
+│   │   └── test/ 
 │   │       ├── test.controller.js
 │   │       ├── test.routes.js
 │   │       └── test.validation.js
@@ -61,82 +55,83 @@ my-app/
 ├── .gitignore
 ├── index.js
 ├── package.json
-🚦 Usage Example
+```
+---
+
+### 🚦 Usage Example
 Once scaffolded, navigate to your new project:
 
-bash
-Copy
-Edit
 cd my-app
 npm start
 You should see:
 
-arduino
-Copy
-Edit
-Server running on port 4000 🚀!...
+
+Server running on port 3000 🚀!...
 Try accessing the default test route:
 
-bash
-Copy
-Edit
-http://localhost:4000/api/v1/test
-💡 Tips & Recommendations
-✅ Use .env for environment variables
-✅ Write all logic in modules, separating controllers, routes, and validation
-✅ Add custom logic in services/ for reusable business functions
-✅ Global error handling is already pre-configured
-✅ Supports Express Middleware (middlewares/ folder)
-✅ Use utils/ for helper functions
 
-🔄 Scripts
-json
-Copy
-Edit
-"scripts": {
-  "start": "nodemon index.js"
-}
+http://localhost:4000/api/v1/test
+---
+
+### 💡 Tips & Recommendations
+✅ Use .env for environment variables <br>
+✅ Write all logic in modules, separating controllers, routes, and validation<br>
+✅ Add custom logic in services/ for reusable business functions<br>
+✅ Global error handling is already pre-configured<br>
+✅ Supports Express Middleware (middlewares/ folder)<br>
+✅ Use utils/ for helper functions<br>
+
+---
+
+### 🔄 Scripts
+
+"scripts": {<br>
+  "start": "nodemon index.js"<br>
+}<br><br>
 Starts the server using nodemon for hot reload
 
-📦 Dependencies (pre-installed)
+
+---
+
+### 📦 Dependencies (pre-installed)
 express - minimal and flexible Node.js web application framework
 
 dotenv - loads environment variables from .env
 
 nodemon - auto-restarts the server on file changes
+---
 
-📌 Requirements
+### 📌 Requirements
 Node.js v14+
 
 npm v6+
+---
 
-🧪 Built With
+### 🧪 Built With
 Node.js
 
 Express
 
 JavaScript (ES Modules)
+---
 
-🙌 Contributing
+## 🙌 Contributing
 Contributions are welcome!
 
-bash
-Copy
-Edit
+
 1. Fork the repo
 2. Make your changes
 3. Submit a Pull Request
-📄 License
+---
+
+## 📄 License
 MIT © 2025 — Ahmed Alshayeb
 
-🔗 Connect with Me
-GitHub: @ahmedalshayeb
+## 🔗 Connect with Me <br>
+GitHub: <a href="https://github.com/Ahmed-Alshayeb">@Ahmed-Alshayeb</a>
 
-LinkedIn: Ahmed Alshayeb
+LinkedIn: <a href="www.linkedin.com/in/ahmed-alshayeb-5843322a2">Ahmed Alshayeb</a>
 
-vbnet
-Copy
-Edit
 
 ### ✅ You can copy this `README.md` and paste it directly into your project folder.
 
@@ -146,14 +141,3 @@ Let me know if you want:
 - Translation into **Arabic**
 - **GitHub Actions** workflow to automate testing or publishing
 
-I'm ready to help make this package shine 🌟
-
-
-
-
-
-
-
-
-Ask ChatGPT
-```
