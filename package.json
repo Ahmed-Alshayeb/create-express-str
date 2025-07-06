@@ -1,9 +1,9 @@
 {
-  "name": "creacreate-express-structure-cli",
+  "name": "create-express-str",
   "version": "1.0.0",
   "description": "A CLI tool to instantly generate a structured Express.js REST API boilerplate with best practices",
   "bin": {
-    "creacreate-express-structure-cli": "./index.js"
+    "create-express-str": "./index.js"
   },
   "type": "module",
   "keywords": [
