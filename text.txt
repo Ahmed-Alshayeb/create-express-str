@@ -1,0 +1,105 @@
+my-app/
+├── config/  
+│   └── models/  
+│         └── test.model.js
+
+│   └── db.connection.js
+├── node_modules/ 
+├── src/ 
+
+│   └── middlewares/ 
+│         └── auth.middleware.js 
+│   └── modules/ 
+│         └── test/ 
+│              └── test.controller.js
+│              └── test.routes.js
+│              └── test.validation.js
+│   └── services/ 
+│         └── test.service.js
+│   └── utils/ 
+│         └── test.js
+│   └── index.routes.js
+│   └── initApp.js
+
+├── .env
+├── .gitignore 
+├── index.js 
+├── package.json
+├── package-lock.json
+
+
+
+=> write this in index.js
+import express from "express";
+import { initApp } from "./src/initApp.js";
+
+const app = express();
+
+app.set("case sensitive routing", true);
+initApp(app, express);
+
+
+
+=> write this in initApp.js
+import { config } from "dotenv";
+import * as Router from "./index.routes.js";
+
+export const initApp = (app, express) => {
+  config();
+  const port = +process.env.PORT || 4000;
+
+  // Middleware
+  app.use(express.json());
+
+  // DB Connection
+  // call connection function...
+
+  // Routes
+  app.use("/api/v1/test", Router.testRouter);
+
+  // Not Found Route
+  app.use("*", (req, res) => {
+    res.status(404).json({ msg: `Route ${req.originalUrl} Not Found` });
+  });
+
+  // Globel Error Handling
+  app.use((err, req, res, next) => {
+    res.status(err.statusCode).json({
+      status: err.status,
+      error: err,
+      message: err.message,
+      stack: err.stack,
+    });
+  });
+
+  // Start Server
+  app.listen(port, () => {
+    console.log(`Server running on port ${port} 🚀!...`);
+  });
+};
+
+
+
+=> write this in index.routes.js
+import testRouter from "./modules/test/test.routes.js";
+
+export {
+  testRouter,
+};
+
+
+
+=> write this in .gitignore 
+.env
+node_modules
+
+
+=> edit in package.json
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+
+=> install packages express, nodemon, dotenv
+
