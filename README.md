@@ -16,11 +16,13 @@
 ## 🛠 Installation & Usage
 
 ### ▶️ Run directly with `npx` (no need to install globally):
+
 npx create-express-str my-app
 
 #### 📂 Want to generate in the current folder?
 
 npx create-express-str .
+
 #### 🌍 Or install it globally:
 
 npm install -g create-express-str
@@ -42,7 +44,7 @@ my-app/
 │   ├── middlewares/
 │   │   └── auth.middleware.js
 │   ├── modules/
-│   │   └── test/ 
+│   │   └── test/
 │   │       ├── test.controller.js
 │   │       ├── test.routes.js
 │   │       └── test.validation.js
@@ -56,24 +58,24 @@ my-app/
 ├── index.js
 ├── package.json
 ```
+
 ---
 
 ### 🚦 Usage Example
+
 Once scaffolded, navigate to your new project:
 
 cd my-app
 npm start
 You should see:
 
-
 Server running on port 3000 🚀!...
 Try accessing the default test route:
 
-
-http://localhost:4000/api/v1/test
----
+## http://localhost:4000/api/v1/test
 
 ### 💡 Tips & Recommendations
+
 ✅ Use .env for environment variables <br>
 ✅ Write all logic in modules, separating controllers, routes, and validation<br>
 ✅ Add custom logic in services/ for reusable business functions<br>
@@ -86,52 +88,53 @@ http://localhost:4000/api/v1/test
 ### 🔄 Scripts
 
 "scripts": {<br>
-  "start": "nodemon index.js"<br>
+"start": "nodemon index.js"<br>
 }<br><br>
 Starts the server using nodemon for hot reload
-
 
 ---
 
 ### 📦 Dependencies (pre-installed)
+
 express - minimal and flexible Node.js web application framework
 
 dotenv - loads environment variables from .env
 
-nodemon - auto-restarts the server on file changes
----
+## nodemon - auto-restarts the server on file changes
 
 ### 📌 Requirements
+
 Node.js v14+
 
-npm v6+
----
+## npm v6+
 
 ### 🧪 Built With
+
 Node.js
 
 Express
 
-JavaScript (ES Modules)
----
+## JavaScript (ES Modules)
 
 ## 🙌 Contributing
-Contributions are welcome!
 
+Contributions are welcome!
 
 1. Fork the repo
 2. Make your changes
 3. Submit a Pull Request
+
 ---
 
 ## 📄 License
+
 MIT © 2025 — Ahmed Alshayeb
 
 ## 🔗 Connect with Me <br>
+
 GitHub: <a href="https://github.com/Ahmed-Alshayeb">@Ahmed-Alshayeb</a>
 
 LinkedIn: <a href="www.linkedin.com/in/ahmed-alshayeb-5843322a2">Ahmed Alshayeb</a>
-
 
 ### ✅ You can copy this `README.md` and paste it directly into your project folder.
 
@@ -140,4 +143,3 @@ Let me know if you want:
 - A **dark mode-friendly markdown version**
 - Translation into **Arabic**
 - **GitHub Actions** workflow to automate testing or publishing
-

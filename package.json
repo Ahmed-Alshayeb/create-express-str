@@ -1,16 +1,26 @@
 {
   "name": "create-express-str",
   "version": "1.0.0",
-  "description": "A CLI tool to instantly generate a structured Express.js REST API boilerplate with best practices",
+  "description": "A CLI tool to scaffold a modern Express.js REST API structure with best practices",
   "bin": {
     "create-express-str": "./index.js"
   },
   "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "keywords": [
-    "cli",
     "express",
-    "api",
-    "rest"
+    "cli",
+    "express-cli",
+    "create-express-app",
+    "express-generator",
+    "nodejs",
+    "scaffold"
   ],
-  "preferGlobal": true
+  "author": "A.A",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
 }
